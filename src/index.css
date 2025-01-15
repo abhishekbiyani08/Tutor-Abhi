@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .primary-btn {
+    @apply bg-primary font-semibold px-6 py-3 rounded-full hover:!scale-105 hover:!shadow-xl duration-300;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#logo {
+  width: 50px;
+}
+
+#logo-footer {
+  width: 40px;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Width of the scrollbar */
+}
+
+.loader {
+  border: 8px solid rgba(255, 255, 255, 0.3);
+  border-top: 8px solid #6a00d3;
+  border-radius: 50%;
+  width: 60px; /* Loader size */
+  height: 60px; /* Loader size */
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

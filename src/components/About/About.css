@@ -1,0 +1,37 @@
+/* About.css */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-container {
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.title-animation {
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.heading-animation {
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.paragraph-animation {
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.image-animation {
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@media (max-width: 768px) {
+  .heading-animation {
+    font-size: 5xl;
+  }
+}
